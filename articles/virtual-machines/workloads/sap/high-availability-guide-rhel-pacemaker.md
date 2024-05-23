@@ -176,8 +176,8 @@ The following items are prefixed with either **[A]** - applicable to all nodes, 
    </code></pre>
 
    If building a cluster on **RHEL 8.X**, use the following commands:  
-   <pre><code>sudo pcs host auth <b>prod-cl1-0</b> <b>prod-cl1-1</b> -u hacluster
-   sudo pcs cluster setup <b>nw1-azr</b> <b>prod-cl1-0</b> <b>prod-cl1-1</b> totem token=30000
+   <pre><code>sudo pcs cluster auth <b>prod-cl1-0</b> <b>prod-cl1-1</b> -u hacluster
+   sudo pcs cluster setup --name <b>nw1-azr</b> <b>prod-cl1-0</b> <b>prod-cl1-1</b>
    sudo pcs cluster start --all
    </code></pre>
 
